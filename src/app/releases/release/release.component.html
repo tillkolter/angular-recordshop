@@ -1,0 +1,13 @@
+<div *ngIf="release">
+    <h2>{{release.name}} details!</h2>
+    <div style="display:inline;">
+        <div style="display:inline;">
+            <label>id: </label>{{release.id}}</div>
+        <div style="display:inline;">
+            <label>name: </label>
+            <input [(ngModel)]="release.name" placeholder="name" />
+        </div>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
+<button (click)="save()">Save</button>
